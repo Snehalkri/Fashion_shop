@@ -1,0 +1,55 @@
+<app-header></app-header>
+<div style="display: flex; margin-top: 5%;padding: 2%;">
+    <div class="main" style="display: flex;">
+        <table>
+            <th>Payment Mode</th>
+            <tr>
+                <td>
+                    <i class="fa fa-money" style="font-size:24px"></i> Cash On delivery
+                </td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-credit-card" style="font-size:24px"></i> Credit Card</td>
+            </tr>
+            <tr>
+                <td><i class='fab fa-amazon-pay' style='font-size:24px'></i> Amazon Pay</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-bank" style="font-size:24px"></i> Net Banking</td>
+            </tr>
+        </table>
+        <div style="font-size: 16px; font-family:Verdana, Geneva, Tahoma, sans-serif; padding: 2%;">
+            <div style="text-align: center;"> CREDIT CARD / DEBIT CARD</div>
+            <form>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Name on Card" required>
+                <span style="align-content: center;"><input type="date" placeholder=" Card valid" required></span>
+                <input type="text" placeholder=" CVV Number" required>
+                <div style="padding-left: 20%;">
+                    <input type="submit" value="Payment">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="summary">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total</td>
+                    <td><i class="fa fa-inr"></i> {{this.productService.getTotalPrice()}}</td>
+                    <td>{{this.productService.getCartNumber()}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<app-footer></app-footer>

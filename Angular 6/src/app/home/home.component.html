@@ -1,0 +1,325 @@
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <img src="assets/img/images.png" style="height: 60px;width: 60px;padding: 30%;" id="icon" alt="User Icon" />
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a routerLink='/login'>LOGIN/REGISTER</a></li>
+                    <li><a routerLink='/home'>HOME</a></li>
+                    <li><a routerLink='/contact'>CONTACT</a></li>
+                    <li><a routerLink='/about'>ABOUT</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="myCarousel " class="carousel slide " data-ride="carousel ">
+        <!-- Indicators -->
+        <ol class="carousel-indicators ">
+            <li data-target="#myCarousel " data-slide-to="0 " class="active "></li>
+            <li data-target="#myCarousel " data-slide-to="1 "></li>
+            <li data-target="#myCarousel " data-slide-to="2 "></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner " role="listbox ">
+            <div class="item active ">
+                <img src="assets/img/b.jpg " alt="New York " width="1200 " height="700 " />
+                <div class="carousel-caption ">
+                    <h3>New York</h3>
+                    <p>The atmosphere in New York is lorem ipsum.</p>
+                </div>
+            </div>
+
+            <div class="item ">
+                <img src="assets/img/c.jpg " alt="Chicago " width="1200 " height="700 " />
+                <div class="carousel-caption ">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+
+            <div class="item ">
+                <img src="assets/img/a.jpg " alt="Los Angeles " width="1200 " height="700 " />
+                <div class="carousel-caption ">
+                    <h3>LA</h3>
+                    <p>
+                        Even though the traffic was a mess, we had the best time playing at Venice Beach!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control " href="#myCarousel " role="button " data-slide="prev ">
+            <span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span>
+            <span class="sr-only ">Previous</span>
+        </a>
+        <a class="right carousel-control " href="#myCarousel " role="button " data-slide="next ">
+            <span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
+            <span class="sr-only ">Next</span>
+        </a>
+    </div>
+
+    <!-- Container (The Band Section) -->
+    <div id="band " class="container text-center ">
+        <h3>THE BAND</h3>
+        <p><em>We love fashion!</em></p>
+        <p>
+            It can be difficult to articulate the power of style and fashion through words, but these icons managed to do so with quote-worthy, inspiring words of wisdom to live by. Don't make fashion own you, but you decide what you are, what you want to express
+            by the way you dress and the way to live. Clothes mean nothing until someone lives in them. Fashion you can buy, but style you possess. The key to style is learning who you are, which takes years. There's no how-to road map to style. It's
+            about self expression and, above all, attitude.<br /> WE ARE THE ONE WHO WILL STYLE YOU.
+        </p>
+        <br />
+        <div class="row ">
+            <div class="col-sm-4 ">
+                <p class="text-center "><strong>Sabyasachi Mukherjee</strong></p>
+                <br />
+                <a href="#demo " data-toggle="collapse ">
+                    <img src="assets/img/d.jpg " class="img-circle person " alt="Random Name " width="255 " height="255 " />
+                </a>
+                <div id="demo " class="collapse ">
+                    <p>Leading designers in India</p>
+                    <p>Loves to Bridal lehengas.</p>
+                    <p>Member since 2000</p>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <p class="text-center "><strong>Manish Malhotra</strong></p>
+                <br />
+                <a href="#demo2 " data-toggle="collapse ">
+                    <img src="assets/img/a.jpg " class="img-circle person " alt="Random Name " width="255 " height="255 " />
+                </a>
+                <div id="demo2 " class="collapse ">
+                    <p>Fashion Designers</p>
+                    <p>Loves to make u feel confident in what u wear.</p>
+                    <p>Member since 1988</p>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <p class="text-center "><strong>Anamika Khana</strong></p>
+                <br />
+                <a href="#demo3 " data-toggle="collapse ">
+                    <img src="assets/img/b.jpg " class="img-circle person " alt="Random Name " width="255 " height="255 " />
+                </a>
+                <div id="demo3 " class="collapse ">
+                    <p>
+                        Anamika and her creations are sold online and offline stores across India and abroad.
+                    </p>
+                    <p>
+                        Her blending Indian textiles and techniques with western silhouette and tailoring are fabulous.
+                    </p>
+                    <p>Member since 2005</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-product></app-product>
+
+    <!-- Container (TOUR Section) -->
+    <div id="tour" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">OUR PRODUCTS</h3>
+            <p class="text-center">
+                Lorem ipsum we'll play you some music.<br /> Remember to book your tickets!
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    September <span class="label label-danger">Sold Out!</span>
+                </li>
+                <li class="list-group-item">
+                    October <span class="label label-danger">Sold Out!</span>
+                </li>
+                <li class="list-group-item">November <span class="badge">3</span></li>
+            </ul>
+
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="assets/img/i.jpg" alt="Paris" width="400" height="300" />
+                        <p><strong>Paris</strong></p>
+                        <p>Friday 27 November 2015</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">
+      Buy Now
+    </button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="assets/img/f.jpg" alt="New York" width="400" height="300" />
+                        <p><strong>New York</strong></p>
+                        <p>Saturday 28 November 2015</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">
+      Buy Now
+    </button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="assets/img/g.jpg" alt="San Francisco" width="400" height="300" />
+                        <p><strong>San Francisco</strong></p>
+                        <p>Sunday 29 November 2015</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">
+      Buy Now
+    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4><span class="glyphicon glyphicon-lock"></span>Dresses</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="psw"><span class="glyphicon glyphicon-shopping-cart" ></span></label>
+                                <input type="number" class="form-control" id="psw" placeholder="How many?" />
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter Address" />
+                            </div>
+                            <button type="submit" class="btn btn-block">
+        Pay
+        <span class="glyphicon glyphicon-ok"></span>
+      </button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+      <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+                        <p>Need <a href="#">help?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cont" style="display: flex;">
+        <div style="float: left; height: 400px; width: 30%">
+            <img src="assets/girl.gif" style="height: 400px" />
+        </div>
+        <!-- Container (Contact Section) -->
+        <!-- <app-contact></app-contact> -->
+        <br />
+        <div class="container" style="width: 70%;">
+            <h3 class="text-center">From The Fashion End</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Snehal</a></li>
+                <li><a data-toggle="tab" href="#menu1">Siya</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h2>Snehal Kumari, Developer</h2>
+                    <p>
+                        Girls, we've been on looking forward to see you and connect with you.
+                    </p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h2>Siya, Designer</h2>
+                    <p>
+                        Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Details</h5><button type="button" class="close" data-dismiss="modal">×</button>
+                    <!-- <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onSubmit(signUpForm)" enctype="multipart/form-data">
+                        <input type="text" #fullName="ngModel" [(ngModel)]="userService.userDetails.fullName" name="fullName" placeholder="Full Name" required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !fullName.valid }">
+                        <div *ngIf="signUpForm.submitted && !fullName.valid">
+                            <label class="validation-message">This field is required.</label>
+                        </div>
+                        <input type="text" #mobile="ngModel" [(ngModel)]="userService.userDetails.mobile" name="mobile" placeholder="Phone Number" required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !mobile.valid }">
+                        <div *ngIf="signUpForm.submitted && !mobile.valid">
+                            <label class="validation-message">This field is required.</label>
+                            <label class="validation-message">Mobile Number must be of 10 Digits.</label>
+                        </div>
+                        <input type="text" #email="ngModel" [(ngModel)]="userService.userDetails.address" name="address" placeholder="Address" required [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid }">
+                        <div *ngIf="signUpForm.submitted && address.errors">
+                            <label *ngIf="email.errors.required" class="validation-message">This field is required.</label>
+                        </div>
+                        <input type="text" #email="ngModel" class="mb-5" [(ngModel)]="userService.userDetails.email" name="email" placeholder="Email" required [pattern]="emailRegex" [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid }">
+                        <div *ngIf="signUpForm.submitted && email.errors">
+                            <label *ngIf="email.errors.required" class="validation-message">This field is required.</label>
+                            <label *ngIf="email.errors.pattern" class="validation-message">Invalid email address.</label>
+                        </div>
+                        <!-- <label for="image">Upload Image</label>
+  <input type="file" #img="ngModel" id="img" name="img" [(ngModel)]="userService.userDetails.img" required>
+   -->
+                        <div class="butt" style="text-align: center;"> <button type="submit"> Submit </button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span> </a><br /><br />
+        <p>
+            Made By
+            <a href="https://www.fashion.com" data-toggle="tooltip" title="Visit w3schools">www.fassion.com</a
+>
+        </p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on("click", function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $("html, body").animate({
+                            scrollTop: $(hash).offset().top,
+                        },
+                        900,
+                        function() {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        }
+                    );
+                } // End if
+            });
+        });
+    </script>
+</body>

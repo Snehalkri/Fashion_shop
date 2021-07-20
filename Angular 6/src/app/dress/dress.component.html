@@ -1,0 +1,29 @@
+<app-header></app-header>
+<mat-toolbar>
+    <span style="text-align: center;margin-left: 50%;
+    margin-top:50px;color: black;"><h2>Dresses</h2></span>
+</mat-toolbar>
+<div style="display: flex;">
+    <div class="container-prod" fxLayout="column" fxLayoutGap="30px" style="height: auto;width: 100%;">
+        <div fxFlex>
+            <mat-grid-list cols="3" rowHeight="300px" fxLayoutGap="30px">
+                <mat-grid-tile *ngFor="let product of products">
+                    <img height="400px" width="60%" src={{product.image}}>
+                    <mat-grid-tile-footer>
+                        <p matLine style="padding-left: 5%; width:33%;color: white;">{{ product.name | uppercase }}</p>
+                        <p style="color: white;width:33%;"><span><i class="fa fa-inr"></i> {{product.price}} </span></p>
+                        <p style="width:33%;color: white;"> <span class="glyphicon glyphicon-shopping-cart" id="addtocart" (click)="onAdd(product.id)"> </span></p>
+                    </mat-grid-tile-footer>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span> </a><br /><br />
+    <p>
+        Made By
+        <a href="https://www.fashion.com" data-toggle="tooltip" title="Visit w3schools">www.fashion.com</a>
+    </p>
+</footer>

@@ -1,0 +1,67 @@
+● src
++---● app
+|   |
+|   +--●about
+|   |  |--about.component.ts|.html|.css
+|   |
+|   +--●app-routing
+|   |  |--app-routing.module.ts|routes.ts
+|   |
+|   +--●bag
+|   |  |--bag.component.ts|.html|.css
+|   |
+|   +--●cart
+|   |  |--cart.component.ts|.html|.css
+|   |
+|   +--●contact
+|   |  |--contact.component.ts|.html|.css
+|   |
+|   +--●dress
+|   |  |--dress.component.ts|.html|.css
+|   |
+|   +--●home
+|   |  |--home.component.ts|.html|.css
+|   |
+|   +--●makeup
+|   |  |--makeup.component.ts|.html|.css
+|   |
+|   +--●procced
+|   |  |--procced.component.ts|.html|.css
+|   |
+|   +--●schedular
+|   |  |--schedular.component.ts|.html|.css
+|   |
+|   +--● user
+|   |  |--user.component.ts|.html|.css
+|   |  +--● sign-up
+|   |  |  |--sign-up.component.ts|.html|.css
+|   |  +--● sign-in
+|   |  |  |--sign-in.component.ts|.html|.css
+|   +--● user-profile
+|   |  |--user-profile.component.ts|.html|.css
+|   |  
+|   |--● services
+|   |  |--bag.service.ts
+|   |  |--makeup.service.ts
+|   |  |--product.service.ts
+|   |  |--watch.service.ts
+|   |
+|   |--● shared
+|      |--bag.ts
+|      |--bags.ts
+|      |--makeup.ts
+|      |--makeups.ts
+|      |--product.ts
+|      |--products.ts
+|      |--user.service.ts
+|      |--user.model.ts
+|      |--watch.ts
+|      |--watches.ts
+|   
+|  
+| 
+|
++---● auth
+    |
+    +-- auth.gaurd.ts
+    +-- auth.interceptor.ts

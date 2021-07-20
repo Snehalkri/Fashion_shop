@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div id="contact" class="container">
+    <!-- <button mat-button mat-dialog-close><a routerLink="/userprofile">Back</a></button> -->
+    <h3 class="text-center">Contact</h3>
+    <p class="text-center"><em>We love our fans!</em></p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>Queries? Drop a note.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>India</p>
+            <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9800938404</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: snehalkumdh@gmail.com</p>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

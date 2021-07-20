@@ -1,0 +1,35 @@
+<app-header></app-header>
+<mat-toolbar>
+    <div style="text-align: center;margin-left: 50%;
+    padding-top:80px;color: black;">
+        <h2>Watch</h2>
+    </div>
+</mat-toolbar>
+<div style="display: flex;">
+    <div class="container-prod" fxLayout="column" fxLayoutGap="30px" style="height: auto;width: 100%;">
+        <div [hidden]="watches" style="text-align: center;font-size: 32px;">
+            <mat-spinner mode="indeterminate" style="margin:0 auto;" [diameter]="30"></mat-spinner>
+            <h6>Loading... Please Wait</h6>
+        </div>
+        <div fxFlex *ngIf="watches">
+            <mat-grid-list cols="3" rowHeight="300px" fxLayoutGap="30px">
+                <mat-grid-tile *ngFor="let watch of watches">
+                    <img height="400px" width="60%" src={{watch.image}}>
+                    <mat-grid-tile-footer>
+                        <p matLine style="padding-left: 5%; width:33%;color: white;">{{ watch.name | uppercase }}</p>
+                        <p style="color: white;width:33%;"><span><i class="fa fa-inr"></i> {{watch.price}} </span></p>
+                        <p style="width:33%;color: white;"> <span class="glyphicon glyphicon-shopping-cart" id="addtocart" (click)="onAdd(watch.id)"> </span></p>
+                    </mat-grid-tile-footer>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span> </a><br /><br />
+    <p>
+        Made By
+        <a href="https://www.fashion.com" data-toggle="tooltip" title="Visit w3schools">www.fashion.com</a>
+    </p>
+</footer>

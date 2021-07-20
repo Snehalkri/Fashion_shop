@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div style="display: flex;padding: 50px;">
+    <h1>ORDER SUMMARY</h1>
+    <div id="container">
+        <h3 style="text-align: center;">CONFIRM ADDRESS & PHONE NUMBER</h3>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Phone Number" required>
+
+            <input type="text" placeholder="Address" required>
+            <div style="padding-left: 20%;">
+                <input type="submit" value="Save" (onclick)="saved()">
+            </div>
+        </form>
+    </div>
+    <div class="summary" style="padding: 5%;">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total</td>
+                    <td><i class="fa fa-inr"></i> {{ this.productService.getTotalPrice() }}</td>
+                    <td>{{ this.productService.getCartNumber() }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center;margin-top: 20px;"><button><a routerLink="/payment">Make Payment</a></button></div>
+
+    </div>
+
+</div>
+<footer class="text-center" style="position:absolute;bottom:0;
+width:100%;">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span> </a><br /><br />
+    <p>
+        Made By
+        <a href="https://www.fashion.com" data-toggle="tooltip" title="Visit w3schools">www.fashion.com</a>
+    </p>
+</footer>

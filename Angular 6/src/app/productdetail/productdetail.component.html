@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="productcontainer" style="padding-top:50px;">
+    <h3 style="text-align: center;">
+        Product Details
+    </h3>
+    <div class="container-product" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md.sm="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+        <div fxFlex style="padding-left: 100px;width: 50%; ">
+            <div>
+                <mat-card *ngIf="product">
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h3>{{ product.name }}</h3>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image style="height: 400px;width: 400px;padding: auto; " src=" {{ product.image }} " />
+                </mat-card>
+            </div>
+            <div fxFlex style="padding: 50px;width: 40%; ">
+                <mat-card-content>
+                    <p>Description: {{ product.desc }}</p>
+                    <p>Price: <i class="fa fa-inr"></i> {{ product.price }}</p>
+                    <p>Category: {{ product.category }}</p>
+                    <p>Average Rating: {{ (product.comments[0].rating+ product.comments[1].rating)/2}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button (click)="goBack() ">Back</button>
+                </mat-card-actions>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,17 @@
+<div class="container-prod" fxLayout="column" fxLayoutGap="30px">
+    <div fxFlex>
+        <mat-grid-list cols="3" rowHeight="400px" fxLayoutGap="30px">
+            <mat-grid-tile *ngFor="let product of products">
+                <img height="400px" width="70%" src={{product.image}}  [routerLink]="['/productdetail', product.id]">
+
+                <mat-grid-tile-footer>
+                    <p matLine style="padding-left: 25%; width:33%;color: white;">{{ product.name | uppercase }}</p>
+                    <p style="color: white;width:33%;"><span>{{product.price}} </span></p>
+                    <p style="width:33%;color: white;"> <span class="glyphicon glyphicon-shopping-cart" id="addtocart" (click)="onAdd(product.id)"> </span></p>
+
+                </mat-grid-tile-footer>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <!-- <app-productdetail [product]="selectedProduct"></app-productdetail> -->
+</div>

@@ -1,0 +1,79 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+            <a class="navbar-brand" href="#myPage"><img src="assets/img/images.png" style="height: 24px; width: 24px" id="icon" alt="User Icon" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href=""> Welcome {{ this.userService.userDetails.fullName }}</a>
+                </li>
+                <li><a routerLink="/userprofile">HOME</a></li>
+                <li><a routerLink="/contact">CONTACT</a></li>
+                <li><a routerLink="/about">ABOUT</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGORIES <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a routerLink="/dress">Dresses</a></li>
+                        <li><a routerLink="/makeup">Makeup</a></li>
+                        <li><a routerLink="/bag">Bags</a></li>
+                        <li><a routerLink="/watch">Watch</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a routerLink="/cart"><span class="glyphicon glyphicon-shopping-cart"></span>
+
+          <span style="color: white; height: 50px; width: 50px">
+            {{ this.productService.getCartNumber() }}</span
+          ></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">PROFILE <span class="caret"></span
+        ></a>
+                    <ul class="dropdown-menu">
+                        <div style="max-width: inherit;">
+                            <span style="height: 60px;width: 60px; border-radius: 50%;margin-left: 45%;">
+                                <img  src="{{this.userService.userDetails.img}}" style="height: 50px;width: 50px; border-radius: 50%;"></span><br>
+                            <div style="text-align: center;">
+                                <form [formGroup]="form" (ngSubmit)="upload()">
+                                    <input type="file" style="color:transparent; " class="form-control mb-3" (change)="selectedFile($event)">
+                                    <button class="btn btn-primary" type="submit">Upload Now</button>
+                                </form>
+                            </div>
+
+                        </div>
+                        <li>
+                            <a>Name: {{ this.userService.userDetails?.fullName }}</a>
+                        </li>
+                        <li>
+                            <a>Email: {{ this.userService.userDetails.email }}</a>
+                        </li>
+                        <li>
+                            <a>Phone: {{ this.userService.userDetails.mobile }}</a>
+                        </li>
+                        <li>
+                            <a>Date of birth: {{ this.userService.userDetails.dob }}</a>
+                        </li>
+                        <li>
+                            <a>Address: {{ this.userService.userDetails.address }}</a>
+                        </li>
+                        <li style="display: flex;">
+                            <input type="button" (click)="onLogout()" value="Logout" />
+                            <button type="button" data-toggle="modal" data-target="#ex" style="height:45px;width:120px;">
+                                  Edit Details
+                           </button>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="# "><span class="glyphicon glyphicon-search "></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
